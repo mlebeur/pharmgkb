@@ -12,7 +12,7 @@ def load_annotations(data_folder):
     results = {}
     for rec in dat:
 
-        _id = rec["release"] + " " + rec["chromosome"] + " " + rec["position"] + " " + rec["reference"] + " " + rec["alternative"]
+        _id = rec["release"] + "_" + rec["chromosome"] + "_" + rec["position"] + "_" + rec["reference"] + "_" + rec["alternative"]
         # remove NaN values, not indexable
         rec = dict_sweep(rec,vals=[np.nan])
         results.setdefault(_id,[]).append(rec)
