@@ -2,7 +2,7 @@
     "version": "0.2",
     "requires" : ["pandas"],
     "dumper" : {
-        "data_url" : ["https://filesender.renater.fr/?s=download&token=3c36362b-9b9b-4fba-8ea7-2855ce5f8581"],
+        "data_url" : ["https://filesender.renater.fr/download.php?token=3c36362b-9b9b-4fba-8ea7-2855ce5f8581&files_ids=4117508"],
         "uncompress" : false
     },
     "uploader" : {
