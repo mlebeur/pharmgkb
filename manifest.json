@@ -2,7 +2,7 @@
     "version": "0.2",
     "requires" : ["pandas"],
     "dumper" : {
-        "data_url" : ["https://srv-store6.gofile.io/download/zLFPQw/drugLabels.zip"],
+        "data_url" : ["https://srv-store4.gofile.io/download/r5pHXJ/var_drug_ann.tsv"],
         "uncompress" : false
     },
     "uploader" : {
