@@ -2,10 +2,8 @@
     "version": "0.2",
     "requires" : ["pandas"],
     "dumper" : {
-        "data_url" : ["https://s3.pgkb.org/data/annotations.zip",
-                      "https://s3.pgkb.org/data/drugLabels.zip",
-                      "https://s3.pgkb.org/data/occurrences.zip"],
-        "uncompress" : true
+        "data_url" : ["https://filesender.renater.fr/?s=download&token=3c36362b-9b9b-4fba-8ea7-2855ce5f8581"],
+        "uncompress" : false
     },
     "uploader" : {
         "parser" : "parser:load_annotations",
