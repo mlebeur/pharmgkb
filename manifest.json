@@ -2,7 +2,7 @@
     "version": "0.2",
     "requires" : ["pandas"],
     "dumper" : {
-        "data_url" : ["https://srv-store4.gofile.io/download/r5pHXJ/var_drug_ann.tsv"],
+        "data_url" : ["https://github.com/mlebeur/testingdepositdata/blob/main/var_drug_ann.tsv"],
         "uncompress" : false
     },
     "uploader" : {
