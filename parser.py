@@ -11,8 +11,7 @@ def load_annotations(data_folder):
     dat = pandas.read_csv(infile,sep="\t",squeeze=True,quoting=csv.QUOTE_NONE).to_dict(orient='records')
     results = {}
     for rec in dat:
-
-        _id = rec["release"] + "_" + rec["chromosome"] + "_" + rec["position"] + "_" + rec["reference"] + "_" + rec["alternative"]
+        _id = rec["position"]
         # remove NaN values, not indexable
         rec = dict_sweep(rec,vals=[np.nan])
         results.setdefault(_id,[]).append(rec)
