@@ -12,10 +12,7 @@ def load_annotations(data_folder):
     results = {}
     for rec in dat:
 
-        if not rec["rsid"] or pandas.isna(rec["rsid"]):
-            logging.warning("No rsid for variant '%s'", rec["Annotation ID"])
-            continue
-        _id = rec["rsid"]
+        _id = rec["release"] + "_" + str(rec["chromosome"]) + "_" + str(rec["position"]) + "_" + rec["reference"] + " " + rec["alternative"] + " " + rec["rsid"]         # remove NaN values, not indexable
         results.setdefault(_id,[]).append(rec)
         
     for _id,docs in results.items():
