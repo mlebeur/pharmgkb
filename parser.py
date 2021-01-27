@@ -16,8 +16,6 @@ def load_annotations(data_folder):
             logging.warning("No rsid for variant '%s'", rec["Annotation ID"])
             continue
         _id = rec["rsid"]
-        # remove NaN values, not indexable
-        rec = dict_sweep(rec,vals=[np.nan])
         results.setdefault(_id,[]).append(rec)
         
     for _id,docs in results.items():
