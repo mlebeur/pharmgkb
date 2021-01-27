@@ -2,7 +2,7 @@
     "version": "0.2",
     "requires" : ["pandas"],
     "dumper" : {
-        "data_url" : ["https://raw.githubusercontent.com/mlebeur/testingdepositdata/main/Dbsnp.1000.tsv"],
+        "data_url" : ["/opt/biothings/Clinvar.tsv"],
         "uncompress" : false
     },
     "uploader" : {
