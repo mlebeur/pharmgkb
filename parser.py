@@ -6,7 +6,7 @@ from biothings import config
 logging = config.logger
 
 def load_annotations(data_folder):
-    infile = os.path("/opt/biothings/Dbsnp.tsv")
+    infile = os.path.abspath("/opt/biothings/Dbsnp.tsv")
     assert os.path.exists(infile)
     dat = pandas.read_csv(infile,sep="\t",squeeze=True,quoting=csv.QUOTE_NONE).to_dict(orient='records')
     results = {}
