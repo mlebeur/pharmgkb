@@ -23,7 +23,7 @@ class AnnotationsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
     @classmethod
     def get_mapping(klass):
         return {
-                'annotations': {
+                'dbsnp': {
                     'properties': {
                         'alleles': {
                             'type': 'text'
