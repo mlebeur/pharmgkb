@@ -10,7 +10,7 @@ from .parser import load_annotations
 
 class AnnotationsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
 
-    main_source = "pharmgkb"
+    main_source = "test5"
     name = "dbsnp"
     __metadata__ = {"src_meta": {}}
     idconverter = None
