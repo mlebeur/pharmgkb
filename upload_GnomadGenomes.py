@@ -10,7 +10,7 @@ from .parser import load_druglabels
 
 class DrugLabelsUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
 
-    main_source = "pharmgkb"
+    main_source = "test5"
     name = "GnomadGenomes"
     __metadata__ = {"src_meta": {}}
     idconverter = None
